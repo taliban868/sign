@@ -1,0 +1,514 @@
+body {
+  background-color: hsl(206, 94%, 87%);
+  font-family: "Ubuntu", sans-serif;
+}
+
+.main-container {
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 100px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.left-section {
+  margin: 10px;
+  background-image: url(assets/images/bg-sidebar-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 40%;
+  height: auto;
+  min-height: 60vh;
+  color: white;
+  border-radius: 5px;
+}
+
+.left-container {
+  padding-top: 20px;
+  padding-left: 40px;
+}
+.right-section {
+  width: 70%;
+  padding: 20px 90px;
+}
+
+.labels {
+  display: block;
+}
+
+.steps {
+  display: flex;
+  align-items: center;
+}
+
+.step1, .step2, .step3,.step4 {
+  text-align: center;
+  align-content: center;
+  border: 1px solid white;
+  height: 30px;
+  width: 30px;
+  border-radius: 40px;
+  margin-right: 12px;
+}
+
+.step {
+  
+  font-weight: 300;
+  margin-bottom: 0px;
+  font-size: 12px;
+}
+
+.info {
+  margin-top: 0px;
+  font-size: 15px;
+  
+  font-weight: 500;
+}
+
+.on {
+  background-color: hsl(206, 94%, 87%);
+  color: hsl(213, 96%, 18%);
+}
+
+.right-container {
+  color: hsl(213, 96%, 18%);
+
+}
+
+.title {
+  margin-bottom: 0px;
+}
+
+.description {
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.personal {
+  width: 98%;
+  height: 35px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  padding-left: 5px;
+  margin-left: 2px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.personal-container {
+  margin-bottom: 100px;
+}
+
+.labels {
+  margin-bottom: 5px;
+}
+
+.next-button {
+  background-color: hsl(213, 96%, 18%);
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+}
+
+.plans {
+  display: flex;
+  gap: 18px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.options {
+  padding: 10px;
+  border: 2px solid grey;
+  width: 30%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.options:hover {
+  border: 2px solid hsl(206, 94%, 87%);
+}
+
+input[type="radio"]:checked + .options {
+  border: 2px solid hsl(206, 94%, 87%);
+  background-color: hsla(206, 94%, 87%, 0.316);
+}
+
+.switch {
+  position: relative;
+  width: 45px;
+  height: 22px;
+  margin-top: 15px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsl(213, 96%, 18%);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 2px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: hsl(213, 96%, 18%);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px hsl(213, 96%, 18%);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.sliderr {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: hsla(206, 94%, 87%, 0.316);
+  border-radius: 10px;
+  height: 48px;
+  margin-bottom: 140px;
+}
+
+.monthly {
+  margin-right: 20px;
+}
+
+.color-off {
+  color: grey;
+}
+
+.color {
+  color: hsl(213, 96%, 18%);
+}
+
+
+.yearly {
+  padding-left: 20px;
+  color: gray;
+}
+
+.color {
+  color: hsl(213, 96%, 18%);
+}
+
+.backk {
+  color: gray;
+  text-decoration: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.addons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.box {
+  display: flex;
+  border: 1px solid grey;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+input[type="checkbox"]:checked + .box {
+  background-color: hsla(206, 94%, 87%, 0.395);
+  border: 1px solid hsl(213, 96%, 18%);
+}
+
+.box:hover {
+  border: 1px solid hsl(213, 96%, 18%);
+}
+
+.box::before {
+  content: '';
+  height: 15px;
+  width: 15px;
+  border: 1px solid grey;
+  border-radius: 15%;
+  background-image: url(assets/images/icon-checkmark.svg);
+  background-repeat: no-repeat;
+  background-size: 80% 80%;
+  background-position: center;
+  margin: 10px 20px;
+  margin-top: 30px;
+}
+
+input[type="checkbox"]:checked + .box::before{
+  background-color: blue;
+}
+
+.addon-pack {
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.addon-des {
+  font-size: 15px;
+  color: gray;
+  margin-top: 5px;
+}
+
+.addon-container {
+  width: 70%;
+}
+
+.addons-container {
+  margin-bottom: 90px;
+}
+
+.addon-prices {
+ align-content: center;
+ float: right;
+ 
+}
+
+.first-bottom-section {
+  display: flex;
+  justify-content: right;
+}
+
+.bottom-section {
+  display: flex;
+  align-content: center;
+}
+
+
+.backk {
+  padding-top: 10px;
+  width: 75%;
+  justify-content: left;
+}
+
+.summary {
+  background-color: hsla(206, 94%, 87%, 0.316);
+  border-radius: 8px;
+}
+
+.summary-padding {
+  padding: 1px 20px;
+}
+
+.plan-summary {
+  display: flex;
+  border-bottom: 1px solid grey;
+  padding-bottom: 20px;
+}
+
+.splan {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.top {
+  width: 87%;
+}
+
+.top a {
+  color: gray;
+  font-weight: 300;
+}
+
+.plan-price-sum {
+  padding-top: 15px;
+  align-content: center;
+  font-weight: bold;
+}
+
+.addons-summary {
+  display: flex;
+  flex-direction: column;
+}
+
+.each-addons {
+  display: flex;
+}
+
+.addon-sum {
+  color: gray;
+  font-weight: 300;
+  width: 85%;
+}
+
+.bottom-summary {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 100px;
+}
+
+.total {
+  width: 88%;
+}
+
+.total-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: hsl(243, 100%, 62%);
+}
+
+.confirm-button {
+  background-color: hsl(243, 100%, 62%);
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+}
+
+.final-container {
+  padding-top: 60px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.final-text {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.disappear {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  body,html {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    background-image: url(assets/images/bg-sidebar-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 98%;
+    height: 180px;
+    min-height: 0vh;
+    color: white;
+    border-radius: 0px;
+    padding: 0px;
+  }
+  .main-container {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-top: 0px;
+    border-radius: 0px;
+    padding: 0px;
+    background-color: rgba(255, 255, 0, 0);
+  }
+  .left-section {
+    background-image: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 0vh;
+    color: white;
+    border-radius: 0px;
+    margin-bottom: 15px;
+  }
+  .step {
+    display: none;
+  }
+  .info {
+    display: none;
+  }
+  .right-section {
+    padding: 0px;
+    width: 100%;
+  }
+  .personal-container,.plan-container,.addons-container,.summary-container,.final-container {
+    height: 400px;
+    margin: 0 auto;
+    width: 85%;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    height: 7%;
+    padding-right: 20px;
+    width: 100%;
+    align-content: center;
+  }
+  
+  .description {
+    font-size: 20px;
+  }
+  .left-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 60px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  .first-bottom-section {
+    display: flex;
+    margin-right: 20px;
+  }
+  .backk {
+    margin-left: 20px;
+    width: 65%;
+  }
+  .next-button {
+    margin-right: 20px;
+  }
+  .final-padding {
+    padding-top: 50px;
+  }
+  
+}

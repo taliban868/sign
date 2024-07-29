@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <title>Frontend Mentor | Multi-step form</title>
+
+  
+</head>
+<body>
+  <div class="main-container">
+    <div class="left-section">
+      <div class="left-container" id="number">
+        <div class="steps">
+          <span class="step1 on">1</span>
+        <div class="stepss">
+          <p class="step"> STEP 1</p>
+          <p class="info"> YOUR INFO</p>
+        </div> 
+        </div>
+        <div class="steps">
+          <span class="step2">2</span>
+        <div class="stepss">
+          <p class="step"> STEP 2</p>
+          <p class="info"> SELECT PLANS</p>
+        </div> 
+        </div>
+        <div class="steps">
+          <span class="step1 ">3</span>
+        <div class="stepss">
+          <p class="step"> Step 3</p>
+          <p class="info">ADD-ONS</p>
+        </div> 
+        </div>
+        <div class="steps">
+          <span class="step1">4</span>
+        <div class="stepss">
+          <p class="step"> STEP 4</p>
+          <p class="info">SUMMARY</p>
+        </div> 
+        </div>
+      </div>
+      
+    </div>
+    <div class="right-section">
+      <div class="right-container " id="pageContainer">
+        <div class="personal-container">
+          <h1 class="title" id="title">Personal info</h1>
+          <p class="description" id="description">
+            Please provide your name, email address, and phone number.
+          </p> 
+          <br>
+        <label for="" class="labels">Name</label> 
+        <input type="text" name="" id="personName" placeholder="e.g. Stephen King" class="personal"> 
+
+          <label for="" class="labels">Email Address</label>
+          <input type="email" name="" id="personEmail" placeholder="e.g. stephenking@lorem.com" class="personal">
+
+          <label for="" class="labels">Phone Number</label> 
+          <input type="tel" name="" id="personNumber" placeholder="e.g. +1 234 567 890" class="personal"> 
+          <br>
+        </div>
+        <div class="footer">
+          <div class="first-bottom-section">
+            <button class="next-button" id="button1" onclick="secondPage()">Next Step</button>
+           </div>
+        </div>
+         
+      </div>
+      
+      
+     </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
